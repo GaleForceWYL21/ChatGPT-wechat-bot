@@ -12,6 +12,7 @@
 ## Update February 24, 2023
 
 修改群聊唤醒对话逻辑。使群聊用户能正确的发起提问和相应回答
+
 Now you can set your own keyword to wake up in group chat correctly. 
 
 ## ⚠️ Update February 9, 2023

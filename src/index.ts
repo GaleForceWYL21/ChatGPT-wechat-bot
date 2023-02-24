@@ -26,9 +26,11 @@ async function onMessage(msg) {
     console.log(
       `Group name: ${topic} talker: ${await contact.name()} content: ${content}`
     );
-
-    const pattern = RegExp(`^@${receiver.name()}\\s+${config.groupKey}[\\s]*`);
-    if (await msg.mentionSelf()) {
+    
+    //更改在群聊中唤醒的正则判断
+    //const pattern = RegExp(`^@${receiver.name()}\\s+${config.groupKey}[\\s]*`);
+    const pattern = RegExp(`^${config.groupKey}[\\s]*`);
+    //if (await msg.mentionSelf()) {
       if (pattern.test(content)) {
         const groupContent = content.replace(pattern, '');
         replyMessage(room, groupContent);
@@ -38,7 +40,7 @@ async function onMessage(msg) {
           'Content is not within the scope of the customizition format'
         );
       }
-    }
+    //}
   } else if (isText) {
     console.log(`talker: ${alias} content: ${content}`);
     if (config.autoReply) {

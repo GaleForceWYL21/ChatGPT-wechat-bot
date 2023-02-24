@@ -9,6 +9,11 @@
 > Get a WeChat robot 🤖 based on ChatGPT in a few step.
 > [中文文档](README_ZH.md) | English
 
+## Update February 24, 2023
+
+修改群聊唤醒对话逻辑。使群聊用户能正确的发起提问和相应回答
+Now you can set your own keyword to wake up in group chat correctly. 
+
 ## ⚠️ Update February 9, 2023
 
 多个用户开始反馈微信暂时封禁, 理由是「使用第三方软件, 外挂, 插件等非官方工具或其他违规行为」，原因待排查，请各位朋友谨慎使用。
